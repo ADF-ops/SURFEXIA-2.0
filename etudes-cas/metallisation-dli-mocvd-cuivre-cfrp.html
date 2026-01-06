@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Étude de cas : métallisation cuivre de guides d’onde CFRP par DLI‑MOCVD. Dépôt interne basse température, adhérence, rugosité maîtrisée et validation RF." />
+  <title>Métallisation cuivre CFRP — DLI‑MOCVD | SURFEXIA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- IMPORTANT : page dans /etudes-cas/ -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo3.png" alt="SURFEXIA Logo" />
+      </a>
+
+      <div class="nav-desktop">
+        <a href="../index.html">Accueil</a>
+        <a href="../offres.html">Offres</a>
+        <a href="../methodologie.html">Méthodologie</a>
+        <div class="nav-item-has-dropdown">
+  <a href="../etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+        <a href="../blog.html">Blog</a>
+        <a href="../a-propos.html">À propos</a>
+        <a href="../contact.html?src=metallisation-dli-mocvd-cuivre-cfrp">Contact</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="../index.html">Accueil</a>
+      <a href="../offres.html">Offres</a>
+      <a href="../methodologie.html">Méthodologie</a>
+      <div class="nav-item-has-dropdown">
+  <a href="../etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+      <a href="../blog.html">Blog</a>
+      <a href="../a-propos.html">À propos</a>
+      <a href="../contact.html?src=metallisation-dli-mocvd-cuivre-cfrp">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <img src="../images/case-cvd-copper-cfrp.webp" alt="Métallisation cuivre interne de guides d’onde CFRP par DLI‑MOCVD" />
+    <div class="hero-text">
+      <h1>Métallisation cuivre de guides d’onde CFRP</h1>
+      <p>Aéronautique & spatial • Guides d’onde RF légers • Dépôt interne basse température</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">Cuivre épais & adhérent • Surface interne confinée • Rugosité maîtrisée (pertes RF)</p>
+
+      <p>
+        Les guides d’onde sont des composants critiques pour la transmission de signaux radiofréquences dans les systèmes embarqués,
+        notamment en aéronautique et dans le spatial.
+      </p>
+
+      <p>
+        Le remplacement de guides métalliques par des guides en composite CFRP (matrice époxy) permet un gain de masse significatif,
+        mais impose de rendre conductrice une surface interne polymère, sur une géométrie confinée et sensible thermiquement.
+      </p>
+
+      <p>
+        Le projet vise un revêtement cuivre épais, homogène et adhérent, avec une rugosité maîtrisée afin de limiter les pertes RF.
+        Le dépôt cuivre est réalisé par MOCVD à injection liquide directe (DLI‑MOCVD), une voie adaptée aux surfaces internes (procédé non directionnel)
+        et compatible avec une stratégie de croissance visant plusieurs microns d’épaisseur.
+      </p>
+
+      <p>
+        L’injection liquide directe apporte une alimentation plus stable du précurseur et contribue à la reproductibilité du dépôt.
+        La démarche suit une logique “procédé → structure → propriétés”, avec itérations entre préparation de surface, paramètres DLI‑MOCVD
+        et caractérisations multi‑échelles, jusqu’à la validation RF.
+      </p>
+
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Objectifs</h2>
+          <ul>
+            <li>Rendre conductrice une surface interne polymère (CFRP époxy).</li>
+            <li>Obtenir un cuivre épais, homogène et adhérent (multi‑microns).</li>
+            <li>Maîtriser rugosité interne pour limiter les pertes RF.</li>
+            <li>Valider les performances RF sur géométrie réelle.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Pourquoi DLI‑MOCVD</h2>
+          <p>
+            Le dépôt cuivre est réalisé par DLI‑MOCVD : un procédé non directionnel adapté aux surfaces internes confinées,
+            et compatible avec une stratégie de croissance pour atteindre plusieurs microns d’épaisseur.
+          </p>
+          <p>
+            L’injection liquide directe apporte une alimentation plus stable du précurseur et contribue à la reproductibilité du dépôt.
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Approche “procédé → structure → propriétés”</h2>
+          <ul>
+            <li>Itérations préparation de surface ↔ paramètres DLI‑MOCVD.</li>
+            <li>Caractérisations multi‑échelles (uniformité, rugosité, adhérence).</li>
+            <li>Validation RF sur guide d’onde (critères fonctionnels).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Contraintes spécifiques</h2>
+          <ul>
+            <li>Géométrie interne : accès limité, risques de non‑uniformité.</li>
+            <li>Substrat polymère : sensibilité thermique et chimique.</li>
+            <li>Rugosité : impact direct sur pertes RF.</li>
+            <li>Adhérence : tenue mécanique et tenue en service.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Préparation / activation CFRP</h2>
+          <p>
+            Une partie du procédé s’appuie sur une formulation de solvant propriétaire, désignée <strong>Solvant X</strong>.
+            Sa composition n’est pas publiée, car elle constitue un élément différenciant du protocole de préparation/activation du CFRP.
+          </p>
+          <ul>
+            <li>But : activer la surface, favoriser nucléation et adhérence du cuivre.</li>
+            <li>Maîtrise : compatibilité substrat époxy, reproductibilité inter‑pièces.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Validation & décision</h2>
+          <ul>
+            <li>Épaisseur et uniformité (le long et en section).</li>
+            <li>Rugosité interne (critère RF).</li>
+            <li>Adhérence et tenue (critères mécaniques).</li>
+            <li>Validation RF (performance système).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta reveal">
+        <h2>Discutons d’un cas similaire</h2>
+        <p>
+          Longueur, section, épaisseur, rugosité cible, contraintes thermiques et performances RF attendues :
+          un cadrage rapide permet d’identifier la bonne fenêtre procédé.
+        </p>
+        <a href="../contact.html?src=metallisation-dli-mocvd-cuivre-cfrp" class="btn-primary">Prendre contact</a>
+        <p class="cta-note">Premier échange de cadrage (30 min) — sans engagement.</p>
+
+        <p style="margin-top: 1rem;">
+          <a href="../etudes-cas.html" style="color: var(--gray-600); text-decoration: none; font-weight: 600;">
+            ← Retour aux études de cas
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+  <div class="container">
+    <h2>Références & communications</h2>
+
+    <div class="refs-grid">
+
+      <article class="ref-card reveal">
+  <div class="ref-badge">Publication</div>
+  <h3 class="ref-title">ADDOU,F. et al.— Engineering copper adhesion on poly-epoxy surfaces allows one-pot metallization of polymer composite telecommunication waveguides</h3>
+  <p class="ref-meta"><em>Coatings</em>, 2021, vol. 11, no 1, p. 50.</p>
+  <div class="ref-links">
+    <a href="https://doi.org/10.3390/coatings11010050" target="_blank" rel="noopener">DOI</a>
+  </div>
+</article>
+
+
+      <article class="ref-card reveal">
+        <div class="ref-badge">Thèse</div>
+        <h3 class="ref-title">Métallisation de guide d'onde en matériau composite à matrice époxy par un procédé DLI‑MOCVD</h3>
+        <p class="ref-meta">HAL Thèses (PDF).</p>
+        <div class="ref-links">
+          <a href="https://theses.hal.science/tel-04225033/file/ADDOU_Fouzi.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </article>
+
+      <article class="ref-card reveal">
+        <div class="ref-badge">Publication</div>
+        <h3 class="ref-title">ZHANG, A., ADDOU, F. et al.— Journal of Vacuum Science &amp; Technology A</h3>
+        <p class="ref-meta"><em>Journal of Vacuum Science &amp; Technology A</em>, 2017, vol. 35, no 6</p>
+        <div class="ref-links">
+          <a href="https://doi.org/10.1116/1.4986052" target="_blank" rel="noopener">DOI</a>
+        </div>
+      </article>
+
+      <article class="ref-card reveal">
+        <div class="ref-badge">Publication</div>
+        <h3 class="ref-title">ADDOU, F. et al.— Metallization of carbon fiber reinforced polymers: Chemical kinetics, adhesion, and properties</h3>
+        <p class="ref-meta"><em>Surface and Coatings Technology</em>, 2016, vol. 308, p. 62-69</p>
+        <div class="ref-links">
+    <a href="https://doi.org/10.1016/j.surfcoat.2016.06.098" target="_blank" rel="noopener">DOI</a>
+  </div>
+      </article>
+
+      <article class="ref-card reveal">
+        <div class="ref-badge">Prix</div>
+        <h3 class="ref-title">Poster prize — Journal of Materials Chemistry C (EuroCVD 21 / Baltic ALD 15)</h3>
+        <p class="ref-meta">11–14 juin 2017, Linköping, Suède. Poster : “Compatibility of MOCVD Cu metallization with polymer pretreatments…”</p>
+        <div class="ref-links">
+          <a href="https://blogs.rsc.org/jm/2017/06/26/congratulations-to-the-winners-of-the-journal-of-materials-chemistry-c-poster-prizes-at-the-joint-eurocvd-21-baltic-ald-15-conference/"
+             target="_blank" rel="noopener">Annonce RSC</a>
+        </div>
+      </article>
+
+      <article class="ref-card reveal">
+        <div class="ref-badge">Communication</div>
+        <h3 class="ref-title">ICMCTF — International Conference on Metallurgical Coatings and Thin Films</h3>
+        <p class="ref-meta">San Diego, avril 2015.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <p><strong>SURFEXIA</strong> — Ingénierie des surfaces • procédés critiques</p>
+      <p>Bordeaux • France • Europe</p>
+      <p>© 2025 SURFEXIA. Tous droits réservés. <a href="../mentions-legales.html" style="color: var(--gray-300)">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
