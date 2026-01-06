@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Étude de cas : modélisation 3D et optimisation de réacteurs CVD/procédés thermochimiques. Réduction des essais, uniformité et scale-up." />
+  <title>Modélisation & optimisation procédé — CVD | SURFEXIA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- IMPORTANT : page dans /etudes-cas/ -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo3.png" alt="SURFEXIA Logo" />
+      </a>
+
+      <div class="nav-desktop">
+        <a href="../index.html">Accueil</a>
+        <a href="../offres.html">Offres</a>
+        <a href="../methodologie.html">Méthodologie</a>
+        <div class="nav-item-has-dropdown">
+  <a href="../etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+        <a href="../blog.html">Blog</a>
+        <a href="../a-propos.html">À propos</a>
+        <a href="../contact.html?src=modelisation-procedes-industriels">Contact</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="../index.html">Accueil</a>
+      <a href="../offres.html">Offres</a>
+      <a href="../methodologie.html">Méthodologie</a>
+      <div class="nav-item-has-dropdown">
+  <a href="../etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+      <a href="../blog.html">Blog</a>
+      <a href="../a-propos.html">À propos</a>
+      <a href="../contact.html?src=modelisation-procedes-industriels">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <img src="../images/case-study-modeling.png" alt="Modélisation et optimisation de réacteurs CVD" />
+    <div class="hero-text">
+      <h1>Modélisation & optimisation de procédés industriels</h1>
+      <p>Simulation 3D • Réacteurs CVD • Procédés thermochimiques</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">Uniformité d’épaisseur • Réduction des essais • Scale‑up sécurisé</p>
+
+      <p>
+        La mise au point de procédés thermochimiques complexes (CVD, traitements thermiques, synthèse) repose souvent sur une approche empirique,
+        avec de nombreux essais coûteux pour converger vers des conditions optimales.
+      </p>
+
+      <p>
+        Un industriel des revêtements CVD haute performance souhaite optimiser un réacteur pour améliorer l'uniformité d'épaisseur sur des pièces
+        de 300 mm et réduire les temps de développement et la consommation de précurseurs.
+      </p>
+
+      <!-- 1ère rangée : 3 cartes -->
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Objectifs</h2>
+          <ul>
+            <li>Améliorer l’uniformité d’épaisseur (pièces jusqu’à 300 mm).</li>
+            <li>Réduire essais, temps de développement et consommation précurseurs.</li>
+            <li>Sécuriser le scale‑up (géométrie, débits, chauffage, pression).</li>
+            <li>Mettre en place un modèle prédictif exploitable en R&D et industrialisation.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Exigence modèle</h2>
+          <p>
+            Le modèle doit capturer les phénomènes couplés : hydrodynamique gazeuse, transferts thermiques (conduction, convection, rayonnement),
+            cinétique chimique et transport d'espèces, afin de prédire la distribution d'épaisseur avec une précision d’environ 15 % relative.
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Approche globale</h2>
+          <ul>
+            <li>Identification phénomènes dominants.</li>
+            <li>Calage sur mesures (températures, épaisseurs).</li>
+            <li>Optimisation par “essais virtuels” (configurations).</li>
+            <li>Validation expérimentale des solutions retenues.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2ème rangée : 3 cartes -->
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Équations & simplifications</h2>
+          <p>
+            Définition des équations gouvernantes (Navier‑Stokes, énergie, transport d’espèces, cinétique hétérogène), et estimation de nombres
+            adimensionnels (Re, Sc, Damköhler) pour guider les simplifications pertinentes.
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Données matériaux & cinétique</h2>
+          <ul>
+            <li>Conductivité thermique, capacité calorifique, émissivité.</li>
+            <li>Paramètres cinétiques (énergie d’activation, ordre réactionnel).</li>
+            <li>Identification via thermogravimétrie + dépôts tests.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Implémentation & calage</h2>
+          <p>
+            Modélisation CAO complète, maillage adaptatif, implémentation CFD / transfert de chaleur / transport d’espèces dans COMSOL Multiphysics,
+            avec cinétique de surface pour le dépôt.
+          </p>
+          <ul>
+            <li>Calage sur thermocouples et cartographies d’épaisseur.</li>
+            <li>Comparaison sur 15 configurations opératoires différentes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta reveal">
+        <h2>Discutons d’un cas similaire</h2>
+        <p>
+          L’étude de centaines de configurations virtuelles permet d’optimiser géométrie d’injecteur, profils de chauffage, pression et débits,
+          puis de ne valider expérimentalement que les solutions les plus prometteuses.
+        </p>
+        <a href="../contact.html?src=modelisation-procedes-industriels" class="btn-primary">Prendre contact</a>
+
+        <p style="margin-top: 1rem;">
+          <a href="../etudes-cas.html" style="color: var(--gray-600); text-decoration: none; font-weight: 600;">
+            ← Retour aux études de cas
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <h2>Résultats & impact</h2>
+
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h3>Optimisation “virtuel → réel”</h3>
+          <p>
+            Étude de 500 configurations virtuelles pour optimiser géométrie d’injecteur, profils de chauffage, pression et débits,
+            puis validation expérimentale des solutions retenues.
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Indicateurs suivis</h3>
+          <ul>
+            <li>Uniformité d’épaisseur.</li>
+            <li>Temps de développement.</li>
+            <li>Consommation de précurseurs.</li>
+            <li>Validation expérimentale.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Témoignage (extrait)</h3>
+          <p>
+            « …Avant, nous tâtonnions pendant des mois… Aujourd'hui, nous testons virtuellement des dizaines de configurations en quelques semaines…
+            …Les gains en temps et en coûts sont spectaculaires… »
+          </p>
+        </div>
+      </div>
+
+      <div class="cards" style="margin-top: 1.5rem;">
+        <div class="offer-card reveal">
+          <h3>Ce que ça apporte</h3>
+          <ul>
+            <li>Compréhension des mécanismes (cause → effet) plutôt que recette empirique.</li>
+            <li>Décisions robustes pour scale‑up et industrialisation.</li>
+            <li>Cadre réutilisable pour d’autres procédés thermochimiques.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Livrables typiques</h3>
+          <ul>
+            <li>Modèle numérique calé + scénario d’exploitation (paramètres, hypothèses).</li>
+            <li>Cartographies de sensibilité et “fenêtres” recommandées.</li>
+            <li>Liste de tests minimaux de validation et plan de mesures.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Précision visée</h3>
+          <p>Prédiction de distribution d’épaisseur avec une précision d’environ 15 % relative (objectif de calage / validation).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>SURFEXIA</strong> — Ingénierie des surfaces • procédés critiques</p>
+      <p>Bordeaux • France • Europe</p>
+      <p>© 2025 SURFEXIA. Tous droits réservés. <a href="../mentions-legales.html" style="color: var(--gray-300)">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Étude de cas : revêtement CrCx pour gainage combustible (ATF). Dépôt DLI‑MOCVD, scale‑up et qualification." />
+  <title>Revêtement CrCx (ATF) — DLI‑MOCVD | SURFEXIA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- IMPORTANT : page dans /etudes-cas/ -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo3.png" alt="SURFEXIA Logo" />
+      </a>
+
+      <div class="nav-desktop">
+        <a href="../index.html">Accueil</a>
+        <a href="../offres.html">Offres</a>
+        <a href="../methodologie.html">Méthodologie</a>
+        <div class="nav-item-has-dropdown">
+  <a href="etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+        <a href="../blog.html">Blog</a>
+        <a href="../a-propos.html">À propos</a>
+        <a href="../contact.html?src=revetement-crc-nucleaire">Contact</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="../index.html">Accueil</a>
+      <a href="../offres.html">Offres</a>
+      <a href="../methodologie.html">Méthodologie</a>
+      <div class="nav-item-has-dropdown">
+  <a href="../etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+      <a href="../blog.html">Blog</a>
+      <a href="../a-propos.html">À propos</a>
+      <a href="../contact.html?src=revetement-crc-nucleaire">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <img src="../images/case-cvd-crc-nuclear.webp" alt="Revêtement CrCx pour gainage combustible (ATF)" />
+    <div class="hero-text">
+      <h1>Revêtement CrCx pour gainage combustible (ATF)</h1>
+      <p>Accident Tolerant Fuel • DLI‑MOCVD • Scale‑up & qualification</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">Nucléaire • Barrière protectrice sur gainage • Dépôt CrCx basse température</p>
+
+      <p>
+        Dans les programmes Accident Tolerant Fuel (ATF), les gaines à base de zirconium doivent conserver leurs performances en conditions nominales
+        tout en améliorant leur tenue en environnements accidentels (vapeur, haute température).
+      </p>
+
+      <p>
+        Le revêtement CrCx (carbure de chrome non stœchiométrique) est étudié comme barrière protectrice potentielle, avec des contraintes fortes
+        d’uniformité, de reproductibilité, et de compatibilité géométrique (architectures de protection interne/externe selon le concept).
+      </p>
+
+      <p>
+        La solution s’appuie sur la DLI‑MOCVD (Direct Liquid Injection MOCVD), une voie compatible avec des dépôts à plus basse température et adaptée
+        à une logique de montée en échelle (“large-scale reactors”), en vue de traiter des lots/segments représentatifs.
+      </p>
+
+      <p>
+        La démarche suit une logique “procédé → structure → propriétés”, avec itérations entre fenêtre DLI‑MOCVD et caractérisations, jusqu’à consolidation
+        des critères de conformité et d’un plan de qualification.
+      </p>
+
+      <!-- 1ère rangée : 3 cartes -->
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Contexte & cible technique</h2>
+          <ul>
+            <li>Programme : Accident Tolerant Fuel (ATF) / gainage combustible.</li>
+            <li>Fonction : barrière protectrice CrCx (tenue en environnements sévères).</li>
+            <li>Contraintes : continuité, uniformité, adhérence, reproductibilité.</li>
+            <li>Transposabilité : traitement de segments/lots représentatifs.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Choix du procédé : DLI‑MOCVD CrCx</h2>
+          <p>
+            La DLI‑MOCVD est une voie compatible avec des dépôts à plus basse température et une stratégie de montée en échelle (“large-scale reactors”)
+            pour traiter des lots/segments.
+          </p>
+          <p>
+            L’injection liquide directe contribue à stabiliser l’alimentation en précurseur et à améliorer la reproductibilité.
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Enjeux scientifiques & industriels</h2>
+          <ul>
+            <li>Uniformité : maîtrise de la couverture et de l’homogénéité sur la géométrie.</li>
+            <li>Reproductibilité : stabilité inter‑lots, robustesse fenêtre procédé.</li>
+            <li>Corrélations : procédé ↔ structure ↔ propriétés (qualification).</li>
+            <li>Décision : critères de conformité et plan de contrôle exploitable.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2ème rangée : 3 cartes -->
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h2>Méthodologie d’ingénierie</h2>
+          <p>Approche “procédé → structure → propriétés”, avec itérations et verrouillage progressif de la fenêtre DLI‑MOCVD.</p>
+          <ul>
+            <li>Cadrage : critères ATF, géométrie, contraintes thermiques.</li>
+            <li>Développement : optimisation fenêtre DLI‑MOCVD (CrCx).</li>
+            <li>Caractérisations : multi‑échelles, critères de conformité.</li>
+            <li>Qualification : plan de contrôle et répétabilité inter‑lots.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Savoir‑faire transférable</h2>
+          <ul>
+            <li>Définition d’une fenêtre robuste (paramètres sensibles, marges).</li>
+            <li>Stratégie scale‑up : lots/segments, standardisation, dérives.</li>
+            <li>Lecture orientée décision : risques, limites, trajectoire de validation.</li>
+          </ul>
+        </div>
+
+        <div class="offer-card reveal">
+          <h2>Livrables typiques</h2>
+          <ul>
+            <li>Recette de référence + points de contrôle (procédé/qualité).</li>
+            <li>Plan de qualification (critères, méthodes, trames de résultats).</li>
+            <li>Rapport technique : résultats, limites, risques, recommandations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta reveal">
+        <h2>Discutons d’un cas similaire</h2>
+        <p>
+          Géométrie cible, objectifs de barrière/protection, contraintes thermiques, exigences d’uniformité et critères de qualification :
+          un cadrage rapide permet d’identifier la bonne fenêtre procédé et le plan de caractérisation associé.
+        </p>
+        <a href="../contact.html?src=revetement-crc-nucleaire" class="btn-primary">Prendre contact</a>
+        <p class="cta-note">Premier échange de cadrage (30 min) — sans engagement.</p>
+
+        <p style="margin-top: 1rem;">
+          <a href="../etudes-cas.html" style="color: var(--gray-600); text-decoration: none; font-weight: 600;">
+            ← Retour aux études de cas
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <h2>Références & communications</h2>
+
+      <div class="cards">
+        <div class="offer-card reveal">
+          <h3>Publication (2019)</h3>
+          <p>
+            “Scale up of a DLI‑MOCVD process for the internal treatment of a batch of 16 nuclear fuel cladding segments with a CrCx protective coating”
+            — <em>Surface and Coatings Technology</em>, 375, 894–902.
+          </p>
+          <p>
+            DOI :
+            <a href="https://doi.org/10.1016/j.surfcoat.2019.06.101" target="_blank" rel="noopener">10.1016/j.surfcoat.2019.06.101</a>
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Publication (2021)</h3>
+          <p>
+            “Low temperature Direct Liquid Injection MOCVD of amorphous CrCx coatings in large-scale reactors:
+            An original route to nanostructured multilayer coatings”.
+          </p>
+          <p>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0257897221003480" target="_blank" rel="noopener">ScienceDirect</a>
+          </p>
+        </div>
+
+        <div class="offer-card reveal">
+          <h3>Communication</h3>
+          <p>GLOBAL 2019 (American Nuclear Society), Seattle, 22–27 septembre 2019.</p>
+          <p><a href="https://www.tib.eu/en/search/id/TIBKAT:1741680328" target="_blank" rel="noopener">Notice / entrée bibliographique</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>SURFEXIA</strong> — Ingénierie des surfaces • procédés critiques</p>
+      <p>Bordeaux • France • Europe</p>
+      <p>© 2025 SURFEXIA. Tous droits réservés. <a href="../mentions-legales.html" style="color: var(--gray-300)">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

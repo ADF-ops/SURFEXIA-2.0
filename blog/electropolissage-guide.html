@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO -->
+  <title>Électropolissage vs Polissage Mécanique : Guide de Sélection | SURFEXIA</title>
+  <meta name="description" content="Comparaison technique électropolissage et polissage mécanique : avantages, limites, coûts. Guide expert pour choisir le procédé de finition optimal pour vos pièces.">
+  <meta name="keywords" content="électropolissage, polissage mécanique, finition acier inox, polissage électrochimique, traitement surface inox, Ra polissage">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css">
+  
+  <style>
+    .article-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--light);
+      border-radius: 12px;
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      flex-wrap: wrap;
+    }
+    
+    .article-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    
+    .article-content h2 {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .article-content h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+    
+    .comparison-table {
+      width: 100%;
+      margin: 2rem 0;
+      border-collapse: collapse;
+      background: var(--white);
+      box-shadow: 0 4px 24px rgba(11, 28, 45, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .comparison-table th {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.9375rem;
+    }
+    
+    .comparison-table td {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--gray-100);
+      color: var(--text);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .comparison-table tr:hover {
+      background: var(--light);
+    }
+    
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+    }
+    
+    .highlight-box h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    
+    .decision-tree {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 24px rgba(11, 28, 45, 0.08);
+    }
+    
+    .decision-step {
+      margin: 1.5rem 0;
+      padding-left: 2rem;
+      border-left: 3px solid var(--accent);
+    }
+    
+    .decision-step strong {
+      color: var(--primary);
+      font-size: 1.0625rem;
+    }
+    
+    @media (max-width: 768px) {
+      .comparison-table {
+        font-size: 0.8125rem;
+      }
+      
+      .comparison-table th,
+      .comparison-table td {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo3.png" alt="SURFEXIA Logo">
+            </a>
+            <div class="nav-desktop">
+                <a href="../index.html">Accueil</a>
+                <a href="../offres.html">Offres</a>
+                <a href="../methodologie.html">Méthodologie</a>
+
+                <!-- DROPDOWN 1 : Études de cas -->
+
+                <div class="nav-item-has-dropdown">
+                  <a href="../etudes-cas.html">Études de cas</a>
+                 <div class="nav-dropdown">
+                   <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+                   <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+                   <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+                   <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+                   <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+                   <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+                   <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+                  </div>
+                </div>
+
+                 <!-- DROPDOWN 2 : Blog (séparé) -->
+                 <div class="nav-item-has-dropdown">
+                  <a href="../blog.html">Blog</a>
+                  <div class="nav-dropdown">
+                    <a href="../blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+                    <a href="../blog/decollement-revetements.html">Décollement de revêtements</a>
+                    <a href="../blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+                  </div>
+                 </div>
+
+                <a href="../a-propos.html">À propos</a>
+                <a href="../contact.html?src=electropolissage-guide">Contact</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav-mobile" id="navMobile">
+                <a href="../index.html">Accueil</a>
+                <a href="../offres.html">Offres</a>
+                <a href="../methodologie.html">Méthodologie</a>
+                
+                <!-- DROPDOWN 1 : Études de cas -->
+
+                <div class="nav-item-has-dropdown">
+                  <a href="../etudes-cas.html">Études de cas</a>
+                 <div class="nav-dropdown">
+                   <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+                   <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+                   <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+                   <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+                   <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+                   <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+                   <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+                  </div>
+                </div>
+
+                 <!-- DROPDOWN 2 : Blog (séparé) -->
+                 <div class="nav-item-has-dropdown">
+                  <a href="../blog.html">Blog</a>
+                  <div class="nav-dropdown">
+                    <a href="../blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+                    <a href="../blog/decollement-revetements.html">Décollement de revêtements</a>
+                    <a href="../blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+                  </div>
+                 </div>
+
+                <a href="../a-propos.html">À propos</a>
+                <a href="../contact.html?src=electropolissage-guide">Contact</a>
+            </div>
+    </header>
+
+<main>
+
+<!-- HERO ARTICLE -->
+
+<section class="hero hero-small">
+        <img src="../images/blog-316l-prepa1.PNG" alt="Électropolissage vs Polissage Mécanique : Guide de Sélection">
+        <div class="hero-text">
+          <h1>Électropolissage vs Polissage Mécanique : Guide de Sélection</h1>
+        </div>
+    </section>
+  
+<!-- ARTICLE -->
+<section class="section reveal">
+  <div class="container">
+    <div class="article-content">
+      
+      <div class="article-meta">
+        <span><strong>Catégorie :</strong> Préparation de surface</span>
+        <span><strong>Temps de lecture :</strong> 7 minutes</span>
+        <span><strong>Niveau :</strong> Intermédiaire</span>
+        <span><strong>Publié :</strong> Janvier 2025</span>
+      </div>
+
+      <p class="lead">
+        Le choix du procédé de finition de surface conditionne les propriétés fonctionnelles, 
+        esthétiques et sanitaires des pièces métalliques. Ce guide compare électropolissage 
+        et polissage mécanique pour orienter votre décision selon vos exigences techniques.
+      </p>
+
+      <h2>Principes des procédés</h2>
+
+      <h3>Polissage mécanique</h3>
+      <p>
+        Le polissage mécanique repose sur l'enlèvement progressif de matière par abrasion 
+        à l'aide de meules, bandes, disques ou pâtes abrasives de granulométrie décroissante. 
+        L'opérateur ou le robot contrôle la pression, la vitesse et la trajectoire pour 
+        obtenir l'état de surface souhaité.
+      </p>
+      <p>
+        <strong>Étapes typiques :</strong> Ébavurage (grain 80-120) → Polissage grossier 
+        (grain 180-320) → Polissage intermédiaire (grain 400-800) → Finition (grain 1000-2000) 
+        → Brillantage (pâte diamant, alumine).
+      </p>
+
+      <h3>Électropolissage</h3>
+      <p>
+        L'électropolissage est un procédé électrochimique d'enlèvement de matière. La pièce 
+        (anode) est immergée dans un électrolyte spécifique (acide) et soumise à un courant 
+        continu. Les aspérités de surface se dissolvent préférentiellement, créant un lissage 
+        et un brillant.
+      </p>
+      <p>
+        <strong>Mécanisme :</strong> Dissolution anodique sélective → Formation d'un film 
+        visqueux → Diffusion préférentielle sur les pics → Réduction progressive de la rugosité.
+      </p>
+
+      <h2>Comparaison technique</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Critère</th>
+            <th>Polissage Mécanique</th>
+            <th>Électropolissage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Principe</strong></td>
+            <td>Enlèvement par abrasion</td>
+            <td>Dissolution électrochimique</td>
+          </tr>
+          <tr>
+            <td><strong>Rugosité atteignable</strong></td>
+            <td>Ra 0.02 - 0.8 µm (selon finition)</td>
+            <td>Ra 0.1 - 0.4 µm (réduction ~30%)</td>
+          </tr>
+          <tr>
+            <td><strong>Enlèvement matière</strong></td>
+            <td>5 - 100 µm (contrôlé)</td>
+            <td>10 - 50 µm (uniforme)</td>
+          </tr>
+          <tr>
+            <td><strong>Uniformité</strong></td>
+            <td>Dépend de l'opérateur</td>
+            <td>Très homogène (toute la pièce)</td>
+          </tr>
+          <tr>
+            <td><strong>Géométries complexes</strong></td>
+            <td>Difficile (zones inaccessibles)</td>
+            <td>Excellente (électrolyte pénètre partout)</td>
+          </tr>
+          <tr>
+            <td><strong>Écrouissage</strong></td>
+            <td>Oui (couche écrouie ~10-50 µm)</td>
+            <td>Non (dissolution pure)</td>
+          </tr>
+          <tr>
+            <td><strong>Contraintes résiduelles</strong></td>
+            <td>Compression (bénéfique fatigue)</td>
+            <td>Relaxation (suppression contraintes)</td>
+          </tr>
+          <tr>
+            <td><strong>État de surface</strong></td>
+            <td>Brillant directionnel (traces)</td>
+            <td>Brillant isotrope (sans rayures)</td>
+          </tr>
+          <tr>
+            <td><strong>Temps de traitement</strong></td>
+            <td>15 min - 2h (selon finition)</td>
+            <td>5 - 30 min (par lot)</td>
+          </tr>
+          <tr>
+            <td><strong>Coût unitaire</strong></td>
+            <td>Moyen (main d'œuvre importante)</td>
+            <td>Élevé (équipements, consommables)</td>
+          </tr>
+          <tr>
+            <td><strong>Matériaux compatibles</strong></td>
+            <td>Tous métaux usinables</td>
+            <td>Inox, titane, alliages spécifiques</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Avantages et limites</h2>
+
+      <h3>Polissage mécanique</h3>
+
+      <p><strong>✓ Avantages :</strong></p>
+      <ul>
+        <li>Contrôle précis de l'enlèvement de matière (ciblé)</li>
+        <li>Large gamme de finitions (du mat au brillant)</li>
+        <li>Investissement équipement accessible</li>
+        <li>Applicable à tous métaux et alliages</li>
+        <li>Possibilité de correction localisée</li>
+        <li>Amélioration de la tenue en fatigue (écrouissage bénéfique)</li>
+      </ul>
+
+      <p><strong>✗ Limites :</strong></p>
+      <ul>
+        <li>Forte dépendance au savoir-faire de l'opérateur</li>
+        <li>Difficultés sur géométries complexes (angles, cavités)</li>
+        <li>Création d'une couche écrouie (peut nécessiter recuit)</li>
+        <li>Contamination possible (particules abrasives incrustées)</li>
+        <li>Temps de traitement élevé pour grandes séries</li>
+        <li>Non-uniformité entre pièces (variabilité humaine)</li>
+      </ul>
+
+      <h3>Électropolissage</h3>
+
+      <p><strong>✓ Avantages :</strong></p>
+      <ul>
+        <li>Uniformité exceptionnelle sur toute la surface</li>
+        <li>Traitement complet des géométries complexes</li>
+        <li>Suppression de la couche écrouie</li>
+        <li>Absence de contamination (pas d'abrasif)</li>
+        <li>Amélioration de la résistance à la corrosion (passivation)</li>
+        <li>Finition sanitaire (industries pharmaceutique, alimentaire)</li>
+        <li>Reproductibilité lot à lot élevée</li>
+      </ul>
+
+      <p><strong>✗ Limites :</strong></p>
+      <ul>
+        <li>Investissement initial élevé (cuves, alimentation, extraction)</li>
+        <li>Consommables coûteux (électrolytes spécifiques)</li>
+        <li>Limitation matériaux (optimisé pour inox 304/316, titane)</li>
+        <li>Gestion des effluents (acidité, métaux dissous)</li>
+        <li>Réduction rugosité limitée (~30%, pas de miroir parfait)</li>
+        <li>Correction locale difficile (traitement global)</li>
+      </ul>
+
+      <h2>Critères de sélection</h2>
+
+      <div class="decision-tree">
+        <h3 style="margin-top: 0;">Arbre de décision</h3>
+        
+        <div class="decision-step">
+          <strong>1. Matériau du substrat</strong>
+          <p>
+            • Inox 304/316, Titane, Hastelloy → Électropolissage ou Polissage mécanique<br>
+            • Aluminium, Cuivre, Laiton, Aciers carbone → Polissage mécanique prioritaire
+          </p>
+        </div>
+        
+        <div class="decision-step">
+          <strong>2. Complexité géométrique</strong>
+          <p>
+            • Géométries simples (plaques, cylindres) → Les deux conviennent<br>
+            • Pièces complexes (tubes, trous borgnes, angles vifs) → Électropolissage recommandé
+          </p>
+        </div>
+        
+        <div class="decision-step">
+          <strong>3. Exigences fonctionnelles</strong>
+          <p>
+            • Résistance corrosion critique (pharma, chimie) → Électropolissage<br>
+            • Tenue en fatigue prioritaire → Polissage mécanique (écrouissage bénéfique)<br>
+            • Hygiène / nettoyabilité → Électropolissage (absence de porosité)
+          </p>
+        </div>
+        
+        <div class="decision-step">
+          <strong>4. Rugosité cible</strong>
+          <p>
+            • Ra < 0.1 µm (miroir) → Polissage mécanique + brillantage<br>
+            • Ra 0.1 - 0.4 µm (brillant fonctionnel) → Électropolissage<br>
+            • Ra > 0.4 µm → Polissage mécanique grossier suffisant
+          </p>
+        </div>
+        
+        <div class="decision-step">
+          <strong>5. Volume de production</strong>
+          <p>
+            • Petites séries (<100 pièces/mois) → Polissage mécanique plus flexible<br>
+            • Moyennes à grandes séries (>500 pièces/mois) → Électropolissage rentable<br>
+            • Production continue → Ligne automatisée (polissage robotisé ou électropolissage)
+          </p>
+        </div>
+        
+        <div class="decision-step">
+          <strong>6. Contraintes budgétaires</strong>
+          <p>
+            • Budget limité, investissement réduit → Polissage mécanique<br>
+            • Capacité d'investissement, ROI sur volume → Électropolissage
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h3>💡 Approche hybride</h3>
+        <p>
+          Dans certains cas, une stratégie combinée optimise le résultat : <strong>polissage 
+          mécanique grossier</strong> pour éliminer les défauts majeurs et réduire la rugosité 
+          initiale, suivi d'un <strong>électropolissage de finition</strong> pour uniformiser 
+          et passiver la surface.
+        </p>
+        <p>
+          Cette combinaison réduit le temps d'électropolissage (donc le coût) tout en bénéficiant 
+          de ses avantages (uniformité, corrosion, hygiène).
+        </p>
+      </div>
+
+      <h2>Applications industrielles typiques</h2>
+
+      <h3>Électropolissage privilégié :</h3>
+      <ul>
+        <li><strong>Pharmaceutique & Biotechnologie :</strong> Cuves, tuyauteries, vannes (hygiène, nettoyabilité)</li>
+        <li><strong>Agroalimentaire :</strong> Équipements en contact produit (laiteries, brasseries)</li>
+        <li><strong>Médical :</strong> Implants, instruments chirurgicaux (biocompatibilité, stérilisation)</li>
+        <li><strong>Chimie :</strong> Réacteurs, échangeurs en milieux corrosifs</li>
+        <li><strong>Aéronautique :</strong> Composants titane, suppression écrouissage</li>
+      </ul>
+
+      <h3>Polissage mécanique privilégié :</h3>
+      <ul>
+        <li><strong>Horlogerie / Luxe :</strong> Boîtiers, bracelets (finition miroir, esthétique)</li>
+        <li><strong>Automobile :</strong> Pièces décoratives, échappements (brillant, coût maîtrisé)</li>
+        <li><strong>Mécanique générale :</strong> Arbres, vérins (état de surface fonctionnel)</li>
+        <li><strong>Aéronautique :</strong> Train d'atterrissage (tenue fatigue prioritaire)</li>
+      </ul>
+
+      <h2>Coûts comparatifs</h2>
+
+      <p><strong>Polissage mécanique (exemple pièce 10x10 cm) :</strong></p>
+      <ul>
+        <li>Main d'œuvre : 30-60 min × 25-40 €/h = <strong>12-40 €/pièce</strong></li>
+        <li>Consommables (abrasifs, pâtes) : 2-5 €/pièce</li>
+        <li>Amortissement équipement : Négligeable (matériel accessible)</li>
+        <li><strong>Total : 15-45 €/pièce</strong></li>
+      </ul>
+
+      <p><strong>Électropolissage (même pièce, lot de 50) :</strong></p>
+      <ul>
+        <li>Consommation électrolyte : 0.5-1 L × 15 €/L = 7-15 €/lot</li>
+        <li>Énergie électrique : ~5 €/lot</li>
+        <li>Amortissement équipement : 10-20 €/lot</li>
+        <li>Main d'œuvre (supervision) : 30 min × 30 €/h = 15 €/lot</li>
+        <li><strong>Total : 37-55 €/lot → 0.7-1.1 €/pièce</strong></li>
+      </ul>
+
+      <p>
+        <strong>Conclusion coût :</strong> L'électropolissage devient compétitif dès que le 
+        volume de production permet d'amortir l'investissement initial (typiquement >500 pièces/mois).
+      </p>
+
+      <h2>Normes et spécifications</h2>
+
+      <p>
+        Les procédés de finition peuvent être spécifiés selon différentes normes :
+      </p>
+
+      <ul>
+        <li><strong>ASTM A380 :</strong> Pratiques de nettoyage, détartrage et passivation de l'acier inoxydable</li>
+        <li><strong>ASTM B912 :</strong> Spécifications pour électropolissage passivation de l'acier inoxydable</li>
+        <li><strong>ISO 1302 :</strong> Indication des états de surface sur les dessins techniques</li>
+        <li><strong>3-A Standards :</strong> Exigences sanitaires (électropolissage) pour équipements agroalimentaires</li>
+      </ul>
+
+      <div class="highlight-box">
+        <h3>🔍 Expertise SURFEXIA</h3>
+        <p>
+          Nous vous accompagnons dans la définition de la gamme de préparation de surface 
+          optimale : sélection du procédé, paramètres opératoires, qualification, et contrôle qualité.
+        </p>
+        <p style="margin-top: 1.5rem;">
+          <a href="../contact.html?src=electropolissage-guide" class="btn-primary">Discuter de votre projet</a>
+        </p>
+      </div>
+
+      <h2>Conclusion</h2>
+
+      <p>
+        Le choix entre électropolissage et polissage mécanique dépend de multiples facteurs : 
+        matériau, géométrie, exigences fonctionnelles, volume et budget. Aucun procédé n'est 
+        universellement supérieur ; chacun excelle dans son domaine d'application.
+      </p>
+
+      <p>
+        L'électropolissage s'impose pour les applications critiques (hygiène, corrosion, 
+        uniformité) sur inox ou titane, tandis que le polissage mécanique reste incontournable 
+        pour les finitions miroir, la correction localisée ou les matériaux non compatibles.
+      </p>
+
+      <p>
+        Une analyse technique préalable, tenant compte de l'ensemble des contraintes, permet 
+        de sécuriser le choix et d'optimiser le rapport performance/coût.
+      </p>
+
+      <p style="margin-top: 2rem; text-align: center;">
+        <a href="../blog.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">
+          ← Retour au blog
+        </a>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section dark reveal">
+  <div class="container cta">
+    <h2>Besoin d'aide pour choisir votre procédé de finition ?</h2>
+    <p>Nos experts analysent vos contraintes et définissent la solution optimale</p>
+    <a href="../contact.html?src=electropolissage-guide" class="btn-primary">Nous contacter</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 SURFEXIA — Ingénierie des surfaces</p>
+  <p>Bordeaux • France & Europe • contact@surfexia.fr</p>
+  <p style="margin-top: 1rem;">
+    <a href="../mentions-legales.html" style="color: var(--accent); text-decoration: underline;">
+      Mentions légales & RGPD
+    </a>
+  </p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="../script.js"></script>
+
+</body>
+</html>
