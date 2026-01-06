@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <!-- SEO -->
+  <title>CVD vs PVD : Quel procédé choisir ? Guide Complet 2025 | SURFEXIA</title>
+  <meta name="description" content="Comparaison technique CVD vs PVD : différences, avantages, limitations. Guide expert pour choisir le bon procédé de dépôt selon votre application industrielle.">
+  <meta name="keywords" content="CVD vs PVD, différence CVD PVD, choisir CVD ou PVD, dépôt chimique vapeur, dépôt physique vapeur, revêtements industriels">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css">
+  
+  <style>
+    .article-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: var(--light);
+      border-radius: 12px;
+      font-size: 0.875rem;
+      color: var(--gray-600);
+      flex-wrap: wrap;
+    }
+    
+    .article-content {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    
+    .article-content h2 {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .article-content h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+    
+    .comparison-table {
+      width: 100%;
+      margin: 2rem 0;
+      border-collapse: collapse;
+      background: var(--white);
+      box-shadow: 0 4px 24px rgba(11, 28, 45, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .comparison-table th {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      letter-spacing: 0.05em;
+    }
+    
+    .comparison-table td {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--gray-100);
+      color: var(--text);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+    
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .comparison-table tr:hover {
+      background: var(--light);
+    }
+    
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      border-radius: 8px;
+    }
+    
+    .highlight-box h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .pros, .cons {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(11, 28, 45, 0.08);
+    }
+    
+    .pros {
+      border-top: 4px solid #10b981;
+    }
+    
+    .cons {
+      border-top: 4px solid #ef4444;
+    }
+    
+    .pros h3::before {
+      content: "✓ ";
+      color: #10b981;
+      font-weight: 900;
+    }
+    
+    .cons h3::before {
+      content: "✗ ";
+      color: #ef4444;
+      font-weight: 900;
+    }
+    
+    @media (max-width: 768px) {
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+      
+      .comparison-table {
+        font-size: 0.8125rem;
+      }
+      
+      .comparison-table th,
+      .comparison-table td {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo3.png" alt="SURFEXIA Logo">
+            </a>
+            <div class="nav-desktop">
+                <a href="../index.html">Accueil</a>
+                <a href="../offres.html">Offres</a>
+                <a href="../methodologie.html">Méthodologie</a>
+                
+                <!-- DROPDOWN 1 : Études de cas -->
+
+                <div class="nav-item-has-dropdown">
+                  <a href="../etudes-cas.html">Études de cas</a>
+                 <div class="nav-dropdown">
+                   <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+                   <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+                   <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+                   <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+                   <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+                   <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+                   <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+                  </div>
+                </div>
+
+                 <!-- DROPDOWN 2 : Blog (séparé) -->
+                 <div class="nav-item-has-dropdown">
+                  <a href="../blog.html">Blog</a>
+                  <div class="nav-dropdown">
+                    <a href="../blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+                    <a href="../blog/decollement-revetements.html">Décollement de revêtements</a>
+                    <a href="../blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+                  </div>
+                 </div>
+
+                <a href="../a-propos.html">À propos</a>
+                <a href="../contact.html?src=cvd-vs-pvd">Contact</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="nav-mobile" id="navMobile">
+                <a href="../index.html">Accueil</a>
+                <a href="../offres.html">Offres</a>
+                <a href="../methodologie.html">Méthodologie</a>
+                
+                <!-- DROPDOWN 1 : Études de cas -->
+
+                <div class="nav-item-has-dropdown">
+                  <a href="../etudes-cas.html">Études de cas</a>
+                 <div class="nav-dropdown">
+                   <a href="../etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+                   <a href="../etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+                   <a href="../etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+                   <a href="../etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+                   <a href="../etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+                   <a href="../etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+                   <a href="../etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+                  </div>
+                </div>
+
+                 <!-- DROPDOWN 2 : Blog (séparé) -->
+                 <div class="nav-item-has-dropdown">
+                  <a href="../blog.html">Blog</a>
+                  <div class="nav-dropdown">
+                    <a href="../blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+                    <a href="../blog/decollement-revetements.html">Décollement de revêtements</a>
+                    <a href="../blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+                  </div>
+                 </div>
+
+                <a href="../a-propos.html">À propos</a>
+                <a href="../contact.html?src=cvd-vs-pvd">Contact</a>
+            </div>
+    </header>
+
+<main>
+
+<!-- HERO ARTICLE -->
+
+<section class="hero hero-small">
+        <img src="../images/blog-cvd-pvd.png" alt="CVD vs PVD : Quel procédé choisir pour votre application ?">
+        <div class="hero-text">
+          <h1>CVD vs PVD : Quel procédé choisir pour votre application ?</h1>
+        </div>
+    </section>
+
+<!-- ARTICLE -->
+<section class="section reveal">
+  <div class="container">
+    <div class="article-content">
+      
+      <div class="article-meta">
+        <span><strong>Catégorie :</strong> Procédés de dépôt</span>
+        <span><strong>Temps de lecture :</strong> 8 minutes</span>
+        <span><strong>Niveau :</strong> Intermédiaire</span>
+        <span><strong>Publié :</strong> Janvier 2025</span>
+      </div>
+
+      <p class="lead">
+        Le choix entre CVD (Chemical Vapor Deposition) et PVD (Physical Vapor Deposition) 
+        conditionne directement la qualité, la performance et l'industrialisation de vos 
+        revêtements. Ce guide vous aide à sélectionner le procédé adapté à vos contraintes.
+      </p>
+
+      <h2>Principes fondamentaux</h2>
+
+      <h3>CVD : Dépôt Chimique en Phase Vapeur</h3>
+      <p>
+        Le CVD repose sur des réactions chimiques en phase gazeuse. Des précurseurs gazeux 
+        réagissent à la surface du substrat chauffé pour former un dépôt solide. Les températures 
+        de procédé varient typiquement entre 400°C et 1200°C selon les matériaux visés.
+      </p>
+      <p>
+        <strong>Mécanisme :</strong> Transport des gaz → Adsorption → Réaction chimique → 
+        Formation du revêtement → Désorption des sous-produits.
+      </p>
+
+      <h3>PVD : Dépôt Physique en Phase Vapeur</h3>
+      <p>
+        Le PVD implique la vaporisation d'une cible solide (cathode) par bombardement ionique 
+        ou évaporation thermique, suivie du dépôt des atomes sur le substrat. Les températures 
+        sont généralement plus basses (150°C - 500°C) et le procédé s'effectue sous vide poussé.
+      </p>
+      <p>
+        <strong>Mécanisme :</strong> Vaporisation de la cible → Transport en phase vapeur → 
+        Condensation sur le substrat → Croissance du film.
+      </p>
+
+      <h2>Tableau comparatif technique</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Critère</th>
+            <th>CVD</th>
+            <th>PVD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Température</strong></td>
+            <td>400°C - 1200°C</td>
+            <td>150°C - 500°C</td>
+          </tr>
+          <tr>
+            <td><strong>Pression</strong></td>
+            <td>1 mbar - Atmosphérique</td>
+            <td>10⁻³ - 10⁻⁶ mbar (vide poussé)</td>
+          </tr>
+          <tr>
+            <td><strong>Conformité</strong></td>
+            <td>Excellente (géométries complexes)</td>
+            <td>Modérée (ligne de vue)</td>
+          </tr>
+          <tr>
+            <td><strong>Vitesse de dépôt</strong></td>
+            <td>0.1 - 50 µm/h</td>
+            <td>0.01 - 5 µm/h</td>
+          </tr>
+          <tr>
+            <td><strong>Adhérence</strong></td>
+            <td>Excellente (liaison chimique)</td>
+            <td>Très bonne (liaison physique)</td>
+          </tr>
+          <tr>
+            <td><strong>Uniformité</strong></td>
+            <td>Élevée sur surfaces 3D</td>
+            <td>Dépend de la géométrie</td>
+          </tr>
+          <tr>
+            <td><strong>Matériaux substrats</strong></td>
+            <td>Limité (tenue thermique requise)</td>
+            <td>Large (métaux, polymères, composites)</td>
+          </tr>
+          <tr>
+            <td><strong>Pureté</strong></td>
+            <td>Sous-produits possibles</td>
+            <td>Très haute pureté</td>
+          </tr>
+          <tr>
+            <td><strong>Coût équipement</strong></td>
+            <td>Modéré à élevé</td>
+            <td>Élevé (vide poussé)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>CVD : Avantages et limitations</h2>
+
+      <div class="pros-cons">
+        <div class="pros">
+          <h3>Avantages</h3>
+          <ul>
+            <li><strong>Conformité exceptionnelle :</strong> Revêtement uniforme sur géométries complexes, cavités, pores</li>
+            <li><strong>Vitesse de dépôt élevée :</strong> Production de films épais (>10 µm) en temps raisonnable</li>
+            <li><strong>Adhérence chimique :</strong> Liaison forte grâce aux réactions à l'interface</li>
+            <li><strong>Large gamme de matériaux :</strong> Carbures, nitrures, oxydes, métaux purs</li>
+            <li><strong>Pression flexible :</strong> Procédés possibles à pression atmosphérique (AP-CVD)</li>
+          </ul>
+        </div>
+        
+        <div class="cons">
+          <h3>Limitations</h3>
+          <ul>
+            <li><strong>Température élevée :</strong> Incompatible avec substrats sensibles (polymères, alliages légers)</li>
+            <li><strong>Sous-produits chimiques :</strong> Gestion des gaz résiduels, risque de contamination</li>
+            <li><strong>Précurseurs coûteux :</strong> Certains précurseurs sont onéreux ou dangereux</li>
+            <li><strong>Contraintes résiduelles :</strong> Risque de délamination si gradient thermique important</li>
+            <li><strong>Équipements spécifiques :</strong> Réacteurs adaptés aux chimies, sécurité renforcée</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>PVD : Avantages et limitations</h2>
+
+      <div class="pros-cons">
+        <div class="pros">
+          <h3>Avantages</h3>
+          <ul>
+            <li><strong>Basse température :</strong> Compatible avec substrats thermosensibles (aluminium, composites, plastiques)</li>
+            <li><strong>Haute pureté :</strong> Absence de réactions chimiques parasites</li>
+            <li><strong>Contrôle microstructure :</strong> Ajustement de la densité, contraintes, orientation cristalline</li>
+            <li><strong>Environnement propre :</strong> Vide poussé limite les contaminations</li>
+            <li><strong>Reproductibilité :</strong> Procédé stable, paramètres bien maîtrisés</li>
+          </ul>
+        </div>
+        
+        <div class="cons">
+          <h3>Limitations</h3>
+          <ul>
+            <li><strong>Ligne de vue :</strong> Difficulté sur géométries complexes, recouvrement partiel des cavités</li>
+            <li><strong>Vitesse limitée :</strong> Dépôts fins (<5 µm), temps long pour films épais</li>
+            <li><strong>Coût équipement :</strong> Systèmes de vide sophistiqués, maintenance exigeante</li>
+            <li><strong>Taille des pièces :</strong> Limitée par la chambre sous vide</li>
+            <li><strong>Cibles coûteuses :</strong> Remplacement fréquent, matériaux nobles onéreux</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h3>💡 Critère de décision clé</h3>
+        <p>
+          <strong>Choisissez CVD si :</strong> Vous avez des géométries complexes à revêtir 
+          uniformément, des besoins d'épaisseurs importantes (>10 µm), et des substrats 
+          compatibles avec des températures élevées (>400°C).
+        </p>
+        <p>
+          <strong>Choisissez PVD si :</strong> Vos substrats sont thermosensibles, vous recherchez 
+          une haute pureté, ou vos pièces présentent des géométries simples avec ligne de vue directe.
+        </p>
+      </div>
+
+      <h2>Applications industrielles typiques</h2>
+
+      <h3>CVD privilégié :</h3>
+      <ul>
+        <li><strong>Aéronautique / Spatial :</strong> Revêtements barrière thermique sur aubes de turbines</li>
+        <li><strong>Électronique :</strong> Dépôts de silicium, diélectriques, conducteurs sur wafers</li>
+        <li><strong>Outils de coupe :</strong> Carbures (TiC, WC) pour résistance à l'usure</li>
+        <li><strong>Nucléaire :</strong> Revêtements CrC, SiC pour tenue haute température</li>
+      </ul>
+
+      <h3>PVD privilégié :</h3>
+      <ul>
+        <li><strong>Horlogerie / Luxe :</strong> Revêtements décoratifs PVD or, noir, couleur sur acier</li>
+        <li><strong>Dispositifs médicaux :</strong> TiN, DLC sur implants et instruments chirurgicaux</li>
+        <li><strong>Automobile :</strong> Revêtements durs AlTiN, CrN sur composants moteur</li>
+        <li><strong>Optique :</strong> Films antireflets, filtres interférentiels</li>
+      </ul>
+
+      <h2>Critères de sélection pratiques</h2>
+
+      <p>Pour orienter votre choix, posez-vous les questions suivantes :</p>
+
+      <ol>
+        <li><strong>Température maximale admissible du substrat :</strong> <400°C → PVD ; >400°C → CVD ou PVD</li>
+        <li><strong>Géométrie des pièces :</strong> Complexe, cavités → CVD ; Simple, plane → PVD</li>
+        <li><strong>Épaisseur visée :</strong> <5 µm → PVD ; >10 µm → CVD</li>
+        <li><strong>Exigences de pureté :</strong> Critique → PVD ; Standard → CVD acceptable</li>
+        <li><strong>Volume de production :</strong> Petites séries → PVD batch ; Grande série → CVD continu possible</li>
+        <li><strong>Budget équipement :</strong> Limité → CVD basse pression ; Conséquent → PVD ou CVD PACVD</li>
+      </ol>
+
+      <div class="highlight-box">
+        <h3>🔍 Besoin d'un diagnostic personnalisé ?</h3>
+        <p>
+          Chaque application industrielle présente des contraintes spécifiques (matériaux, 
+          géométries, performances attendues, budget). SURFEXIA vous accompagne dans l'analyse 
+          de votre besoin et la définition du procédé optimal.
+        </p>
+        <p style="margin-top: 1.5rem;">
+          <a href="../contact.html?src=cvd-vs-pvd" class="btn-primary">Échanger avec un expert</a>
+        </p>
+      </div>
+
+      <h2>Conclusion</h2>
+
+      <p>
+        Le choix entre CVD et PVD ne se résume pas à une opposition technique, mais à une 
+        adéquation entre procédé et application. La CVD excelle sur les géométries complexes 
+        et les films épais, tandis que la PVD offre une compatibilité thermique étendue et 
+        une haute pureté.
+      </p>
+
+      <p>
+        Dans certains cas, une approche hybride (pré-traitement PVD + dépôt CVD, ou inversement) 
+        peut optimiser les performances finales. L'expertise d'un ingénieur spécialisé permet 
+        de sécuriser ces choix stratégiques et d'éviter des investissements inadaptés.
+      </p>
+
+      <p style="margin-top: 2rem; text-align: center;">
+        <a href="../blog.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">
+          ← Retour au blog
+        </a>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section dark reveal">
+  <div class="container cta">
+    <h2>Un projet de revêtement CVD ou PVD ?</h2>
+    <p>Échangez avec nos experts pour définir la solution optimale</p>
+    <a href="../contact.html?src=cvd-vs-pvd" class="btn-primary">Nous contacter</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 SURFEXIA — Ingénierie des surfaces</p>
+  <p>Bordeaux • France & Europe • contact@surfexia.fr</p>
+  <p style="margin-top: 1rem;">
+    <a href="../mentions-legales.html" style="color: var(--accent); text-decoration: underline;">
+      Mentions légales & RGPD
+    </a>
+  </p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="../script.js"></script>
+
+</body>
+</html>
