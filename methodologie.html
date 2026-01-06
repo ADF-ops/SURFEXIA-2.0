@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Méthodologie SURFEXIA - Approche structurée pour l’ingénierie des surfaces et diagnostic industriel." />
+  <title>Méthodologie - SURFEXIA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo3.png" alt="SURFEXIA Logo" />
+      </a>
+
+      <div class="nav-desktop">
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Offres</a>
+        <a href="methodologie.html">Méthodologie</a>
+        <div class="nav-item-has-dropdown">
+  <a href="etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+        <div class="nav-item-has-dropdown">
+  <a href="blog.html">Blog</a>
+  <div class="nav-dropdown">
+    <a href="blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+    <a href="blog/decollement-revetements.html">Décollement de revêtements</a>
+    <a href="blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+  </div>
+</div>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html?src=methodologie">Contact</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="offres.html">Offres</a>
+      <a href="methodologie.html">Méthodologie</a>
+      <div class="nav-item-has-dropdown">
+  <a href="etudes-cas.html">Études de cas</a>
+  <div class="nav-dropdown">
+    <a href="etudes-cas/metallisation-dli-mocvd-cuivre-cfrp.html">Métallisation Cu DLIMOCVD CFRP</a>
+    <a href="etudes-cas/metallisation-ag-voie-humide-cfrp.html">Métallisation Ag voie humide CFRP</a>
+    <a href="etudes-cas/revetement-crc-nucleaire.html">Revêtement CrCx Nucléaire</a>
+    <a href="etudes-cas/infiltration-structures-poreuses-316l-in718-w.html">Infiltration structures poreuses</a>
+    <a href="etudes-cas/diagnostic-adherence-pvd-316l-luxe.html">Diagnostic adhérence PVD 316L</a>
+    <a href="etudes-cas/finition-surface-316l-mim-luxe.html">Finition surface 316L MIM</a>
+    <a href="etudes-cas/modelisation-procedes-industriels.html">Modélisation multiphysique CVD</a>
+  </div>
+</div>
+      <div class="nav-item-has-dropdown">
+  <a href="blog.html">Blog</a>
+  <div class="nav-dropdown">
+    <a href="blog/cvd-vs-pvd.html">CVD vs PVD : Comparaison technique</a>
+    <a href="blog/decollement-revetements.html">Décollement de revêtements</a>
+    <a href="blog/electropolissage-guide.html">Électropolissage vs Polissage mécanique</a>
+  </div>
+</div>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html?src=methodologie">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero hero-small">
+    <img src="images/landing-diagnostic-industrial.webp" alt="Méthodologie SURFEXIA" />
+    <div class="hero-text">
+      <h1>Méthodologie</h1>
+      <p>Une approche structurée et rigoureuse</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead">
+        SURFEXIA déploie une méthodologie éprouvée, adaptée aux enjeux critiques de l’ingénierie des surfaces :
+        diagnostic, optimisation, qualification et transfert industriel.
+      </p>
+
+      <h2>Démarche en 6 étapes</h2>
+
+      <div class="cards">
+        <div class="card card-step reveal">
+          <span class="step-number">01</span>
+          <h3>Cadrage — Définition du besoin</h3>
+          <p>Analyse du contexte industriel, définition du périmètre d’intervention, identification des contraintes techniques et économiques. Revue documentaire et collecte des données existantes.</p>
+        </div>
+
+        <div class="card card-step reveal">
+          <span class="step-number">02</span>
+          <h3>Caractérisation — Diagnostic</h3>
+          <p>Investigations expérimentales (MEB-EDX, DRX, profilométrie, essais mécaniques). Analyse des défaillances, identification des causes racines, cartographie des mécanismes en jeu.</p>
+        </div>
+
+        <div class="card card-step reveal">
+          <span class="step-number">03</span>
+          <h3>Modélisation — Simulation</h3>
+          <p>Appui de la modélisation numérique (FEM, thermique, mécanique) pour prédire les comportements, optimiser les paramètres et réduire le nombre d’essais expérimentaux.</p>
+        </div>
+
+        <div class="card card-step reveal">
+          <span class="step-number">04</span>
+          <h3>Optimisation — Qualification</h3>
+          <p>Plans d’expériences (DoE), essais de validation, qualification des paramètres procédé. Détermination de la fenêtre robuste et des tolérances acceptables.</p>
+        </div>
+
+        <div class="card card-step reveal">
+          <span class="step-number">05</span>
+          <h3>Industrialisation — Transfert</h3>
+          <p>Rédaction de gammes opératoires, formation des équipes, accompagnement au démarrage production. Mise en place de contrôles qualité et d’indicateurs de suivi.</p>
+        </div>
+
+        <div class="card card-step reveal">
+          <span class="step-number">06</span>
+          <h3>Suivi — Amélioration continue</h3>
+          <p>Support technique post-déploiement, analyse des retours terrain, optimisations itératives. Accompagnement dans la montée en compétences des équipes internes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <h2>Outils & Moyens techniques</h2>
+
+      <div class="split reveal">
+        <div>
+          <h3>Caractérisation avancée</h3>
+          <p>SURFEXIA s’appuie sur un réseau de partenaires techniques équipés de moyens de caractérisation avancés, permettant une analyse multi-échelles des surfaces et interfaces.</p>
+          <ul>
+            <li>Microscopie électronique (MEB-EDX, FIB).</li>
+            <li>Analyse chimique de surface (XPS, ToF-SIMS).</li>
+            <li>Diffraction des rayons X.</li>
+            <li>Profilométrie optique et mécanique.</li>
+            <li>Essais mécaniques (scratch test, nanoindentation).</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Modélisation numérique</h3>
+          <p>La modélisation numérique permet de réduire les coûts d’essais, d’anticiper les comportements et d’optimiser les procédés avant leur mise en œuvre.</p>
+          <ul>
+            <li>Simulation thermique et mécanique (FEM).</li>
+            <li>Modélisation de procédés CVD/PVD.</li>
+            <li>Prédiction des contraintes résiduelles.</li>
+            <li>Optimisation paramétrique.</li>
+            <li>Calcul de durée de vie et fiabilité.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Une problématique à résoudre ?</h2>
+        <p>Discutons de votre problématique et de la méthodologie la plus adaptée.</p>
+        <a href="contact.html?src=methodologie" class="btn-primary">Prendre contact</a>
+        <p class="cta-note">Premier échange de cadrage (30 min) — sans engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>SURFEXIA</strong> — Ingénierie des surfaces & procédés critiques</p>
+      <p>Bordeaux — France — Europe</p>
+      <p>© 2025 SURFEXIA. Tous droits réservés. <a href="mentions-legales.html" style="color: var(--gray-300)">Mentions légales</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
