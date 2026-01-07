@@ -61,6 +61,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img, video, iframe{
+  max-width: 100%;
+  height: auto;
+}
 
 html {
   scroll-behavior: smooth;
@@ -374,9 +383,10 @@ p {
   transition: max-height 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.nav-mobile.open {
+.nav-mobile.open{
   display: block;
-  max-height: 600px;
+  max-height: calc(100vh - 86px);
+  overflow-y: auto;
 }
 
 .nav-mobile a {
@@ -625,7 +635,7 @@ p {
   margin-top: 2rem;
 }
 
-/* Variante: grille de cartes avec un espacement custom */
+​/* Variante: grille de cartes avec un espacement custom */
 .cards.cards-spaced{
   margin-top: 1.5rem;
 }
@@ -1674,6 +1684,12 @@ footer strong {
   .container { 
     padding: 0 1.5rem; 
   }
+
+  .btn-primary{
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
   
   .logo img { 
     height: 44px; 
@@ -1684,9 +1700,10 @@ footer strong {
     padding: 0 1rem; 
   }
   
-  .hero-small { 
-    min-height: 380px; 
-  }
+  .hero-small{
+  min-height: 260px;
+  height: auto;
+}
   
   .hero-text { 
     padding: 1.5rem; 
@@ -1880,7 +1897,3 @@ footer strong {
 .section.dark .offer-card ul li::before{
   color: var(--accent);
 }
-
-
-
-
