@@ -625,6 +625,11 @@ p {
   margin-top: 2rem;
 }
 
+/* Variante: grille de cartes avec un espacement custom */
+.cards.cards-spaced{
+  margin-top: 1.5rem;
+}
+
 .card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1863,4 +1868,5 @@ footer strong {
 .section.dark .offer-card ul li::before{
   color: var(--accent);
 }
+
 
