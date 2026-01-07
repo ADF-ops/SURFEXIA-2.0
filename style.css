@@ -780,6 +780,7 @@ p {
 
 /* Offer Cards */
 .offer-card {
+  border: 1px solid rgba(0, 212, 255, 0.10);
   padding: 2.25rem;
   background: var(--white);
   min-height: auto;
@@ -1879,6 +1880,7 @@ footer strong {
 .section.dark .offer-card ul li::before{
   color: var(--accent);
 }
+
 
 
 
