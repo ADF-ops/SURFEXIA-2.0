@@ -1833,3 +1833,34 @@ footer strong {
   background: rgba(0,212,255,0.14);
   border-color: rgba(0,212,255,0.5);
 }
+/* Harmonisation des offer-cards dans une section dark (Résultats & impact) */
+.section.dark .offer-card{
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.section.dark .offer-card:hover{
+  transform: translateY(-6px);
+  border-color: rgba(0, 212, 255, 0.55);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35), 0 0 0 2px rgba(0, 212, 255, 0.35);
+}
+
+.section.dark .offer-card h3{
+  color: var(--white);
+}
+
+.section.dark .offer-card p{
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.section.dark .offer-card ul li{
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* (Option) puces un peu plus visibles sur fond sombre */
+.section.dark .offer-card ul li::before{
+  color: var(--accent);
+}
+
