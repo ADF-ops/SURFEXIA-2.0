@@ -786,6 +786,17 @@ p {
   display: block;
 }
 
+/* Surbrillance au survol des offer-cards (études de cas) */
+.offer-card{
+  transition: var(--transition-base);
+}
+
+.offer-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg), 0 0 0 2px rgba(0, 212, 255, 0.35);
+  border-color: rgba(0, 212, 255, 0.55);
+}
+
 .offer-card img { 
   display: none; 
 }
@@ -1868,5 +1879,6 @@ footer strong {
 .section.dark .offer-card ul li::before{
   color: var(--accent);
 }
+
 
 
